@@ -321,8 +321,8 @@ class App {
             const s = this.#randomTalents[number];
             if(!s) return warn(`${number} 为未知天赋`);
             if(this.#talentSelected.has(s)) continue;
-            if(this.#talentSelected.size == 3)
-                return warn('⚠只能选3个天赋');
+            if(this.#talentSelected.size == 5)
+                return warn('⚠只能选5个天赋');
 
             const exclusive = this.#life.exclusive(
                 Array.from(this.#talentSelected).map(({id})=>id),
@@ -367,7 +367,7 @@ class App {
         let description, list, check;
         switch(this.#step) {
             case this.Steps.TALENT:
-                description = '🎉 请选择3个天赋';
+                description = '🎉 请选择5个天赋';
                 list = this.#randomTalents;
                 check = talent=>this.#talentSelected.has(talent);
                 break;
