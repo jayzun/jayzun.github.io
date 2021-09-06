@@ -52,3 +52,5 @@ node repl
 ```
 
 > More instructions at [documentation](https://liferestart.syaro.io/)。
+
+## v2 只修改天赋爆率
