@@ -53,4 +53,4 @@ node repl
 
 > More instructions at [documentation](https://liferestart.syaro.io/)。
 
-## v2 只修改天赋爆率
+## v2 修改天赋爆率、可选天赋变成20个
